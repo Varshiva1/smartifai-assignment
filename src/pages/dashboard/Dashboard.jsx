@@ -26,7 +26,7 @@ export default function Dashboard() {
       <div className="max-[800px]:flex-col max-[800px]:gap-2  bg-primaryColor rounded-lg text-white p-1 flex gap-8 align-middle">
         <select className="bg-transparent w-[150px] max-[800px]:w-full">
           {["Daily", "Weekly", "Monthly"].map((ele) => (
-            <option value={ele}>{ele}</option>
+            <option className='text-black'value={ele}>{ele}</option>
           ))}
         </select>
         <p className="max-[800px]:flex max-[800px]:justify-between">
