@@ -66,8 +66,8 @@ export default function Dashboard() {
       </div>
 
       <br />
-      <div className="flex w-[100%] max-[1280px]:flex-col max-[1280px]:gap-4">
-        <div className="flex flex-wrap gap-4">
+      <div className="flex w-[100%] max-[1280px]:flex-col max-[1280px]:gap-4 gap-4">
+        <div className="w-full grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4 max-[450px]:grid-cols-2">
           <Cards title="Weather" icon={currentWeather?.condition?.icon}>
             {currentWeather?.condition?.text}
           </Cards>
@@ -79,7 +79,7 @@ export default function Dashboard() {
           <Cards title="Humidity">{currentWeather?.humidity}</Cards>
           <Cards title="Heat Index (C)">{currentWeather?.heatindex_c}</Cards>
         </div>
-        <div className="bg-white w-[500px] h-[400px] rounded-md max-[800px]:w-[280px] max-[800px]:h-[200px]">
+        <div className="bg-white w-[430px] h-[320px] rounded-md max-[800px]:w-full max-[800px]:h-[200px]">
           <Carousel autoplay>
             {Array(3)
               .fill()
@@ -91,6 +91,6 @@ export default function Dashboard() {
           </Carousel>
         </div>
       </div>
-    </div>
-  );
+    </div>
+  );
 }

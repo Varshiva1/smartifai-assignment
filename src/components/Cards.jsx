@@ -1,6 +1,6 @@
 export default function Cards({ title, icon, children }) {
   return (
-    <div className="max-[800px]:w-[150px] max-[800px]:h-[120px] w-[200px] h-[150px] text-primaryColor shadow-md rounded-md p-4 text-center bg-slate-100">
+    <div className="h-[150px] text-primaryColor shadow-md rounded-md p-4 text-center bg-slate-100">
       <p className=" font-semibold">{title}</p>
       <div className="text-2xl flex flex-col h-full">
         {icon ? (
@@ -16,6 +16,6 @@ export default function Cards({ title, icon, children }) {
         )}
         {children}
       </div>
-    </div>
-  );
+    </div>
+  );
 }
