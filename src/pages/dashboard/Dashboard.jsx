@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   const fetchData = async () => {
     const res = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=dd744413e3d6405a852123256221701&q=${activeCountry}`
+      `https://api.weatherapi.com/v1/current.json?key=dd744413e3d6405a852123256221701&q=${activeCountry}`
     );
     const data = await res.json();
     setCurrentWeather(data.current);
